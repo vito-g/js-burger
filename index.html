@@ -2,41 +2,86 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>JS-BURGER</title>
   </head>
   <body>
 
-    <header>
-      <h1>Create your Burger</h1>
-    </header>
+    <div class="global-container">
 
-    <main>
-      <input type="text" name="burger-name" value="" placeholder="Name your Burger">
-      <div class="Ingredients">
-        Ingredients
-        <div class="">
-          <input type="checkbox" name="" value="">
-          <input type="checkbox" name="" value="">
+      <header>
+        <h1>Create your Burger</h1>
+      </header>
+
+      <main>
+        <input type="text" name="burger-name" value="" placeholder="Name your Burger">
+        <div class="Ingredients">
+          <h2>Ingredients</h2>
         </div>
-        <div class="">
-          <input type="checkbox" name="" value="">
-          <input type="checkbox" name="" value="">
-        </div>
-        <div class="">
-          <input type="checkbox" name="" value="">
-          <input type="checkbox" name="" value="">
+        <div class="container">
+
+          <div class="row clearfix">
+            <div class="left fl">
+              <label for="testo-1">Cheese</label>
+              <input type="checkbox" name="" value="">
+              <label for="testo-1">add</label>
+            </div>
+            <div class="right fl">
+              <label for="testo-1">Tomato</label>
+              <input type="checkbox" name="" value="">
+              <label for="testo-1">add</label>
+            </div>
+          </div>
+
+          <div class="row clearfix">
+            <div class="left fl">
+              <label for="testo-1">Egg</label>
+              <input type="checkbox" name="" value="">
+              <label for="testo-1">add</label>
+            </div>
+            <div class="right fl">
+              <label for="testo-1">Lettuce</label>
+              <input type="checkbox" name="" value="">
+              <label for="testo-1">add</label>
+            </div>
+          </div>
+
+          <div class="row clearfix">
+            <div class="left fl">
+              <label for="testo-1">Mustard</label>
+              <input type="checkbox" name="" value="">
+              <label for="testo-1">add</label>
+            </div>
+            <div class="right fl">
+              <label for="testo-1">Ketchup</label>
+              <input type="checkbox" name="" value="">
+              <label for="testo-1">add</label>
+            </div>
+          </div>
+
         </div>
 
         <div class="discount">
-          <input type="text" name="coupone" value="">
+          <label for="testo-1">Discount Coupon</label>
+          <input type="text" name="coupone" value="" placeholder="inserisci il tuo coupon">
         </div>
         <input type="submit" name="submit" value="calculate">
-      </div>
-    </main>
 
-    <footer>
-      
-    </footer>
+      </main>
+
+      <footer clearfix>
+        <div class="left fl">
+          <h2>Your Price</h2>
+        </div>
+        <div class="right fr">
+          right
+        </div>
+      </footer>
+
+    </div>
+
+
+
 
 
 

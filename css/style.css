@@ -1,0 +1,55 @@
+/* Class Utility */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.global-container {
+  width: 40%;
+  margin: auto;
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+.clearfix {
+  content : '';
+  display: table;
+  clear: both;
+}
+.row {
+  width: 100%;
+}
+
+.row >* {
+  width: 50%;
+}
+
+.fl{
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+/* END Class Utility */
+
+footer {
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+
+footer .left {
+  width: 30%;
+}
+
+footer .rigth {
+  width: 40px;
+  background-color: yellow;
+  height: 100%;
+  text-align: center;
+
+}
