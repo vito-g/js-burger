@@ -19,6 +19,10 @@ var checkedIngredients = 0;
   alert("Hello World!");
 });*/
 document.getElementById('calculate').addEventListener('click', function() {
+/*N.B.: Occorre che il contatore relativo al numero di ingredienti spuntati eviti di conteggiare anche eventuali cambi di scelta delle checkbox spuntate che
+possono esser causa di conseguenti validazioni errate. Pertanto è necessario assegnare alla variabile checkedIngredient valore pari a zero all'interno
+dell'event listener.*/
+checkedIngredients = 0;
 
 for (var i = 0; i < ingredienti.length; i++) {
   if (ingredienti[i].checked) {
@@ -26,6 +30,6 @@ for (var i = 0; i < ingredienti.length; i++) {
   }
 }
 if (checkedIngredients < sogliaMinCheck) {
-  alert('devi selezionare almeno ' +  sogliaMinCheck + ' ingredienti');
+  alert('devi selezionare un numero di ingredienti almeno pari a ' +  sogliaMinCheck);
 }
 });
