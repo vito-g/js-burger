@@ -54,10 +54,20 @@ for (var i = 0; i < ingredienti.length; i++) {
 //   calcolo.innerText = hamCost;
 //   console.log(hamCost);
 // }
+// if (checkedIngredients < sogliaMinCheck) {
+//   alert('devi selezionare un numero di ingredienti almeno pari a ' +  sogliaMinCheck);
+// } else if (nome.value.length === 0){
+//   alert('devi assegnare un nome al tuo hamburger');
+// } else {
+//   calcolo.innerText = hamCost;
+//   console.log(hamCost);
+// }
 if (checkedIngredients < sogliaMinCheck) {
   alert('devi selezionare un numero di ingredienti almeno pari a ' +  sogliaMinCheck);
 } else if (nome.value.length === 0){
   alert('devi assegnare un nome al tuo hamburger');
+} else if (couponArray.indexOf(couponCodex.value) !== -1) {
+  calcolo.innerText = hamCost * costoPercentuale;
 } else {
   calcolo.innerText = hamCost;
   console.log(hamCost);
