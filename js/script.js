@@ -21,6 +21,9 @@ globale del panino andrà fatto all'interno del ciclo for*/
 
 //Inizializzo var "calcolo" associata al div del footer di id "right" ove andrò a stampare il costo finale dell'hamburger
 var calcolo = document.getElementById('right');
+/*Dal momento che il calcolo parte unicamente se, oltre alla spunta minima di checkbox, l'utente inserisce un nome per l'hamburger, allora inizializzo
+pure una var per il nome dell'hamburger e la associo all'input ad esso relativo*/
+var nome = document.getElementById('burger-name');
 
 /*SNIPPET: document.getElementById("myBtn").addEventListener("click", function() {
   alert("Hello World!");
@@ -40,8 +43,16 @@ for (var i = 0; i < ingredienti.length; i++) {
 
 
 }
+// if (checkedIngredients < sogliaMinCheck) {
+//   alert('devi selezionare un numero di ingredienti almeno pari a ' +  sogliaMinCheck);
+// } else {
+//   calcolo.innerText = hamCost;
+//   console.log(hamCost);
+// }
 if (checkedIngredients < sogliaMinCheck) {
   alert('devi selezionare un numero di ingredienti almeno pari a ' +  sogliaMinCheck);
+} else if (nome.value.length === 0){
+  alert('devi assegnare un nome al tuo hamburger');
 } else {
   calcolo.innerText = hamCost;
   console.log(hamCost);
