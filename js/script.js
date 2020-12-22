@@ -14,11 +14,18 @@ A tal proposito inserirò una variabile (che di fatto è una costante) per il nu
 di volta in volta il numero di quelle spuntate*/
 var sogliaMinCheck = 2;
 var checkedIngredients = 0;
-for (var i = 0; i < ingredienti.length; i++ {
+
+/*SNIPPET: document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hello World!");
+});*/
+document.getElementById('calculate').addEventListener('click', function() {
+
+for (var i = 0; i < ingredienti.length; i++) {
   if (ingredienti[i].checked) {
     checkedIngredients++;
   }
 }
 if (checkedIngredients < sogliaMinCheck) {
-  alert('devi selezionare almeno' +  sogliaMinCheck + 'ingredienti');
+  alert('devi selezionare almeno ' +  sogliaMinCheck + ' ingredienti');
 }
+});
