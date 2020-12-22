@@ -26,7 +26,7 @@ pure una var per il nome dell'hamburger e la associo all'input ad esso relativo*
 var nome = document.getElementById('burger-name');
 /*L'hamburger è suscettibile di sconto se l'utente dispone di un codice coupon tra quelli presenti nel database del sito. Inizializzo, dunque, un array
 con tanti item quanti sono i codici sconto disponibili ed una variabile che riporti il costo percentuale risultante*/
-var couponArray = ['iuwhtbvln8', 'fg5n9gss62', 'ngp0uabssf'];
+var couponArray = ['iuwhtbvln8', 'fg5n9gss62', 'ngp0uabssf', 'z2r60u1ock'];
 var costoPercentuale = 0.8;
 //IL coupon sarà inserito dall'utente nell'input relativo di id=coupon. Creo dunque una variabile che rimandi al suddetto input:
 var couponCodex = document.getElementById('coupon')
@@ -44,9 +44,6 @@ for (var i = 0; i < ingredienti.length; i++) {
     checkedIngredients++;
     hamCost += parseInt(ingredienti[i].value);
   }
-
-
-
 }
 // if (checkedIngredients < sogliaMinCheck) {
 //   alert('devi selezionare un numero di ingredienti almeno pari a ' +  sogliaMinCheck);
@@ -66,10 +63,10 @@ if (checkedIngredients < sogliaMinCheck) {
   alert('devi selezionare un numero di ingredienti almeno pari a ' +  sogliaMinCheck);
 } else if (nome.value.length === 0){
   alert('devi assegnare un nome al tuo hamburger');
-} else if (couponArray.indexOf(couponCodex.value) !== -1) {
-  calcolo.innerText = hamCost * costoPercentuale;
+} else if (couponArray.indexOf(couponCodex.value) !== -1) { //L'istruzione di fianco vuole, altresì, dire che, se il valore inserito ha indice uguale a quello di uno degli item contenuti nell'array ( che, in questo caso, va da 0 a 3) allora il codice coupon è valido e cnsente l'operazione che segue:
+  calcolo.innerText = '$ ' + hamCost * costoPercentuale;
 } else {
-  calcolo.innerText = hamCost;
+  calcolo.innerText = '$ ' + hamCost;
   console.log(hamCost);
 }
 });

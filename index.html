@@ -9,11 +9,11 @@
 
     <div class="global-container">
 
-      <header>
+      <header class="padding">
         <h1>Create your Burger</h1>
       </header>
 
-      <main>
+      <main class="padding">
         <input id='burger-name' type="text" name="burger-name" value="" placeholder="Name your Burger" required>
         <div class="Ingredients">
           <h2>Ingredients</h2>
@@ -65,12 +65,13 @@
           <label for="testo-1">Discount Coupon</label>
           <input id="coupon" type="text" name="coupon" value="" placeholder="inserisci il tuo coupon">
         </div>
-
-        <button id='calculate' type="button" name="button">Calculate</button>
+        <div class="output">
+          <button id='calculate' type="button" name="button">calculate</button>
+        </div>
 
       </main>
 
-      <footer clearfix>
+      <footer class="clearfix padding">
         <div id="left" class="fl">
           <h2>Your Price</h2>
         </div>
