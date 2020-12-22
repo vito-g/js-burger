@@ -5,4 +5,4 @@ l'indice relativo alla classe richiamata, pur essendo, oltre che la prima (e qui
 var corpoIngredienti = document.getElementById('ingredient-box');
 /*Vado ora ad assegnare una variabile che vada arichiamare gli input contenuti nella classe ingredient-box.
 Lo facco attraverso il TagName che restituisce una collection di valori(input in questo caso)*/
-var ingredienti = corpoIngredienti.querySelectorAll('row input');
+var ingredienti = corpoIngredienti.getElementsByTagName('input');
