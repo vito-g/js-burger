@@ -11,6 +11,7 @@
   margin: auto;
   background-color: lightgrey;
   padding: 20px;
+  font-family: sans-serif;
 }
 
 .clearfix {
@@ -35,8 +36,12 @@
 }
 /* END Class Utility */
 
+.discount input {
+  width: 60%;
+}
+
 footer {
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
   height: 70px;
   line-height: 70px;

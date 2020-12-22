@@ -14,7 +14,7 @@
       </header>
 
       <main>
-        <input type="text" name="burger-name" value="" placeholder="Name your Burger">
+        <input id='burger-name' type="text" name="burger-name" value="" placeholder="Name your Burger" required>
         <div class="Ingredients">
           <h2>Ingredients</h2>
         </div>
@@ -23,12 +23,12 @@
           <div class="row clearfix">
             <div class="left fl">
               <label for="testo-1">Cheese</label>
-              <input type="checkbox" name="" value="">
+              <input class="added" type="checkbox" name="" value="">
               <label for="testo-1">add</label>
             </div>
             <div class="right fl">
               <label for="testo-1">Tomato</label>
-              <input type="checkbox" name="" value="">
+              <input class="added" type="checkbox" name="" value="">
               <label for="testo-1">add</label>
             </div>
           </div>
@@ -36,12 +36,12 @@
           <div class="row clearfix">
             <div class="left fl">
               <label for="testo-1">Egg</label>
-              <input type="checkbox" name="" value="">
+              <input class="added" type="checkbox" name="" value="">
               <label for="testo-1">add</label>
             </div>
             <div class="right fl">
               <label for="testo-1">Lettuce</label>
-              <input type="checkbox" name="" value="">
+              <input class="added" type="checkbox" name="" value="">
               <label for="testo-1">add</label>
             </div>
           </div>
@@ -49,12 +49,12 @@
           <div class="row clearfix">
             <div class="left fl">
               <label for="testo-1">Mustard</label>
-              <input type="checkbox" name="" value="">
+              <input class="added" type="checkbox" name="" value="">
               <label for="testo-1">add</label>
             </div>
             <div class="right fl">
               <label for="testo-1">Ketchup</label>
-              <input type="checkbox" name="" value="">
+              <input class="added" type="checkbox" name="" value="">
               <label for="testo-1">add</label>
             </div>
           </div>
@@ -65,7 +65,8 @@
           <label for="testo-1">Discount Coupon</label>
           <input type="text" name="coupone" value="" placeholder="inserisci il tuo coupon">
         </div>
-        <input type="submit" name="submit" value="calculate">
+
+        <button id='calulate' type="button" name="button">Calculate</button>
 
       </main>
 
