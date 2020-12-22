@@ -24,7 +24,12 @@ var calcolo = document.getElementById('right');
 /*Dal momento che il calcolo parte unicamente se, oltre alla spunta minima di checkbox, l'utente inserisce un nome per l'hamburger, allora inizializzo
 pure una var per il nome dell'hamburger e la associo all'input ad esso relativo*/
 var nome = document.getElementById('burger-name');
-
+/*L'hamburger è suscettibile di sconto se l'utente dispone di un codice coupon tra quelli presenti nel database del sito. Inizializzo, dunque, un array
+con tanti item quanti sono i codici sconto disponibili ed una variabile che riporti il costo percentuale risultante*/
+var couponArray = ['iuwhtbvln8', 'fg5n9gss62', 'ngp0uabssf'];
+var costoPercentuale = 0.8;
+//IL coupon sarà inserito dall'utente nell'input relativo di id=coupon. Creo dunque una variabile che rimandi al suddetto input:
+var couponCodex = document.getElementById('coupon')
 /*SNIPPET: document.getElementById("myBtn").addEventListener("click", function() {
   alert("Hello World!");
 });*/
