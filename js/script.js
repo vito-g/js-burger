@@ -14,8 +14,10 @@ A tal proposito inserirò una variabile (che di fatto è una costante) per il nu
 di volta in volta il numero di quelle spuntate*/
 var sogliaMinCheck = 2;
 var checkedIngredients = 0;
-// assegno una variabile (difatto una costante) relativa al costo di default dell' hamburger
-var hamDefaultCost = 4;
+// assegno una variabile relativa al costo dell' hamburger assegnando  valore di default.
+var hamCost = 4;
+/*A questo costo andrà sommato quello di ogni singolo ingrediente aggiunto. Quindi anche il conteggio sul costo
+globale del panino andrà fatto all'interno del ciclo for*/
 
 /*SNIPPET: document.getElementById("myBtn").addEventListener("click", function() {
   alert("Hello World!");
