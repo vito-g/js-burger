@@ -33,14 +33,11 @@ var couponCodex = document.getElementById('coupon')
 /*SNIPPET: document.getElementById("myBtn").addEventListener("click", function() {
   alert("Hello World!");
 });*/
-// alert('1');
 document.getElementById('calculate').addEventListener('click', function() {
 /*N.B.: Occorre che il contatore relativo al numero di ingredienti spuntati eviti di conteggiare anche eventuali cambi di scelta delle checkbox spuntate che
 possono esser causa di conseguenti validazioni errate. Pertanto è necessario assegnare alla variabile checkedIngredient valore pari a zero all'interno
 dell'event listener.*/
-// checkedIngredients = 0;
-
-
+checkedIngredients = 0;
 var hamCost = 4;
 for (var i = 0; i < ingredienti.length; i++) {
   if (ingredienti[i].checked) {
